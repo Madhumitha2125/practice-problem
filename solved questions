@@ -1,0 +1,53 @@
+QUESTION 1 :
+import java.util.*;
+public class evenorodd{
+public static void main(string[]args){
+Scanner scan=new Scanner(System.in);
+int a=scan.nextInt();
+if(a%2==0){
+System.out.println("Even");}
+else{
+System.out.println("Odd");}
+}}
+.............................................................................................
+QUESTION 2 : POSITIVE, NEGATIVE, ZERO
+if(a>0){
+S.O.P("positive");}
+else if(a<0){
+S.O.P("Negative");}
+else{
+S.O.P("Zero");}
+..............................................................................................
+QUESTION 3: DIV BY 3 AND 5
+if(a%3=0 && a%5=0){
+S.O.P("It is divisible");}
+else{
+S.O.P("it is not divisible");}
+...............................................................................................
+QUESTION 4 : YEAR, DATE,MONTH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
