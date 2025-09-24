@@ -36,6 +36,7 @@ public class SumOfDigits {
         scanner.close();
     }
 }
+**********************************************************************************
 
 Q22. Harshad Number (Medium)
 Check whether the given number is a Harshad Number.
@@ -53,6 +54,7 @@ Input :
 21
 Output :
 Not /*
+***********************************************************************
 Q22. Harshad Number (Medium)
 Check whether the given number is a Harshad Number.
 (A Harshad Number is divisible by the sum of its digits.)
@@ -83,6 +85,7 @@ public class HarshadNumber {
 		}
 	}
 /*
+**************************************************************************
 
 Q23. Perfect Number (Medium)
 Check whether a number is a Perfect Number.
@@ -127,7 +130,7 @@ public class PerfectNumberCheck {
         scanner.close();
     }
 }
-
+********************************************************************************
 Q24. Prime Number (Easy)
 Check whether a number is Prime.
 Input format :
@@ -164,6 +167,7 @@ public class PrimeNumber {
 	}
 }
 /*
+**********************************************************************
 
 Q25. Perfect Square (Easy)
 Check whether a number is a Perfect Square.
@@ -199,8 +203,7 @@ public class PerfectSquare {
 		sc.close();
 	}
 }
-
-/*
+*******************************************************************************
 Q26. Fibonacci Series (Easy)
 Print Fibonacci Series up to N terms.
 Input format :
