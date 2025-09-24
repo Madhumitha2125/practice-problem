@@ -41,6 +41,7 @@ public class TriangleShape {
 	}
 }
 /*
+****************************************************************************************
 
 Q12. Descending Order of 4 Numbers (Easy)
 Arrange four numbers in descending order.
@@ -77,6 +78,7 @@ public class DescendingOrderOf4Numbers {
 		sc.close();
 	}
 }
+*********************************************************************************************
 
 Q13. Character Type (Easy)
 Determine whether the given character is an alphabet, a digit, or a special character.
@@ -110,6 +112,7 @@ public class CharacterType {
 		sc.close();
 	}
 }
+**************************************************************************************************
 
 Q14. Even Numbers in Range (Easy)
 Display even numbers between a given range inclusive of both start and end.
@@ -142,7 +145,7 @@ public class EvenNumbersInRange {
         scanner.close();
     }
 }
-
+**********************************************************************
 Q15. Sum of Even Numbers (Easy)
 Find the sum of even numbers between 1 and a given number.
 Input format :
@@ -170,9 +173,8 @@ public class SumOfEvenNumbers {
 		sc.close();
 	}
 }
-
-
 /*
+********************************************************************************
 Q16. Sum of Odd and Even Numbers (Medium)
 Find the sum of odd and even numbers from 1 to N.
 Input format :
@@ -204,6 +206,7 @@ public class SumOfOddAndEvenNumbers {
 		
 	}
 }
+**********************************************************************************
 
 Q17. Factorial (Medium)
 Find the factorial of a number.
@@ -239,6 +242,7 @@ public class Factorial {
 		sc.close();
 	}
 }
+*****************************************************************************************************************
 
 Q18. Print Digits Right to Left (Easy)
 Print digits of a given number from right to left.
@@ -267,9 +271,7 @@ public class PrintDigitsRightToLeft {
 		sc.close();
 	}
 }
-/*
-
-*
+**************************************************************************************************
 Q19. Sum of Numbers Divisible by 3 or 5 (Medium)
 Accept an integer range and print the sum of numbers that are divisible by either 3 or 5.
 Input format :
@@ -293,7 +295,7 @@ public class SumOfNumbersDivisibleby3or5 {
 		sc.close();
 	}
 }
-
+*************************************************************************************
 Q20. Count Digits (Easy)
 Count the number of digits in a number.
 Input format :
