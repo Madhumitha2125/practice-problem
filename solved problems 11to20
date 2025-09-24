@@ -1,0 +1,332 @@
+Q11. Triangle Shape (Easy)
+Check whether a triangle is Equilateral, Isosceles, or Scalene.
+Input format :
+Sides of the triangle in separate lines.
+Output format :
+Type of triangle.
+Sample test cases :
+Input :
+18
+18
+18
+Output :
+Equilateral Triangle
+Input :
+12
+25
+15
+Output :
+Scalene Triangle
+Input :
+52
+52
+323
+Output :
+Isosceles Triangle 
+*/
+package week1;
+import java.util.Scanner;
+public class TriangleShape {
+	static void eq(int a, int b, int c) {	
+		if(a==b && a ==c && b==c) System.out.println("Equilateral Triangle");
+		if(a==b || b==c || a==c) System.out.println("Scalene Triangle");
+		if(a !=b && a!=c && b!=c) System.out.println("Isosceles Triangle");
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
+		eq(a, b, c);
+
+		sc.close();
+	}
+}
+/*
+
+Q12. Descending Order of 4 Numbers (Easy)
+Arrange four numbers in descending order.
+Input format :
+Four integers separated by spaces.
+Output format :
+Numbers in descending order.
+Sample test cases :
+Input :
+5 8 2 9
+Output :
+9 8 5 2 
+*/
+package week1;
+import java.util.Scanner;
+public class DescendingOrderOf4Numbers {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int[4];
+		int temp;
+		for(int i=0; i<4; i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int j=0; j<4; j++) {
+			for(int k=j+1; k<4; k++) {
+				if(arr[j] < arr[k]) {
+					temp = arr[j]; 
+					arr[j] = arr[k];
+					arr[k] = temp;			
+				}
+			}
+		}
+		for(int a:arr) System.out.print(a + " ");
+		sc.close();
+	}
+}
+
+Q13. Character Type (Easy)
+Determine whether the given character is an alphabet, a digit, or a special character.
+Input format :
+A single character.
+Output format :
+alphabet / digit / special
+Sample test cases :
+Input :
+A
+Output :
+alphabet
+Input :
+7
+Output :
+digit
+Input :
+@
+Output :
+special
+*/
+package week1;
+import java.util.Scanner;
+public class CharacterType {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char letter = sc.next().charAt(0);
+		if(letter >=48 && letter <=57) System.out.print("digit");
+		else if((letter>=65 && letter <=90) || (letter >=97 && letter <=122)) System.out.print("alphabet");
+		else System.out.print("special");
+		sc.close();
+	}
+}
+
+Q14. Even Numbers in Range (Easy)
+Display even numbers between a given range inclusive of both start and end.
+Input format :
+Two integers (start and end).
+Output format :
+Even numbers.
+Sample test cases :
+Input :
+1 10
+Output :
+2 4 6 8 10
+import java.util.Scanner;
+
+public class EvenNumbersInRange {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: start and end values
+        int start = scanner.nextInt();
+        int end = scanner.nextInt();
+
+        // Output: even numbers in the range
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+Q15. Sum of Even Numbers (Easy)
+Find the sum of even numbers between 1 and a given number.
+Input format :
+An integer.
+Output format :
+Sum of even numbers.
+Sample test cases :
+Input :
+10
+Output :
+30
+Input :
+7
+Output :
+12 
+*/
+package week1;
+import java.util.Scanner;
+public class SumOfEvenNumbers {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int sum=0, n = sc.nextInt();
+		for(int i=1; i<=n; i++) if( i %2==0) sum+=i;
+		System.out.print(sum);
+		sc.close();
+	}
+}
+
+
+/*
+Q16. Sum of Odd and Even Numbers (Medium)
+Find the sum of odd and even numbers from 1 to N.
+Input format :
+An integer.
+Output format :
+Sum of odd numbers and sum of even numbers separated by a space.
+Sample test cases :
+Input :
+10
+Output :
+25 30
+Input :
+15
+Output :
+64 56
+*/
+package week1;
+import java.util.Scanner;
+public class SumOfOddAndEvenNumbers {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int oddSum=0, evenSum=0, n= sc.nextInt();
+		for(int i=1; i<=n; i++) {
+			if(i%2 ==0) evenSum += i;
+			else oddSum +=i;
+		}
+		System.out.println(oddSum + " " + evenSum);
+		sc.close();
+		
+	}
+}
+
+Q17. Factorial (Medium)
+Find the factorial of a number.
+Input format :
+An integer.
+Output format :
+Factorial value.
+Sample test cases :
+Input :
+5
+Output :
+120
+Input :
+-7
+Output :
+Error! Factorial of a negative number doesn't exist. 
+*/
+package week1;
+import java.util.Scanner;
+public class Factorial {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int fact=1, n = sc.nextInt();
+		if(n >=0) {
+			if(n ==0) System.out.println("1");
+			if(n>0) {
+				for(int i=n; i>=1; i--) {
+					fact *= i;
+				}System.out.println(fact);
+			}
+		}
+		else System.out.println("Error! Factorial of a negative number doesn't exist.");
+		sc.close();
+	}
+}
+
+Q18. Print Digits Right to Left (Easy)
+Print digits of a given number from right to left.
+Input format :
+An integer.
+Output format :
+Digits separated by space.
+Sample test cases :
+Input :
+1234
+Output :
+4 3 2 1 
+*/
+package week1;
+import java.util.Scanner;
+public class PrintDigitsRightToLeft {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int digit;
+		while(n>0) {
+			digit = n %10;
+			System.out.print(digit + " ");
+			n /=10;
+		}
+		sc.close();
+	}
+}
+/*
+
+*
+Q19. Sum of Numbers Divisible by 3 or 5 (Medium)
+Accept an integer range and print the sum of numbers that are divisible by either 3 or 5.
+Input format :
+Two integers (start and end).
+Output format :
+Sum of numbers.
+Sample test cases :
+Input :
+1 10
+Output :
+33
+*/
+package week1;
+import java.util.Scanner;
+public class SumOfNumbersDivisibleby3or5 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int sum=0, s =sc.nextInt(), e =sc.nextInt();
+		for(int i=s; i<=e; i++) if(i % 3==0 || i%5 ==0) sum +=i;
+		System.out.println(sum);
+		sc.close();
+	}
+}
+
+Q20. Count Digits (Easy)
+Count the number of digits in a number.
+Input format :
+An integer.
+Output format :
+Digit count.
+Sample test cases :
+Input :
+98765
+Output :
+5
+*/
+package week1;
+import java.util.Scanner;
+public class /*
+Q20. Count Digits (Easy)
+Count the number of digits in a number.
+Input format :
+An integer.
+Output fOutput :
+5
+*/
+package week1;
+import java.util.Scanner;
+public class CountDigits {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int count=0;	
+		while(n>0) {
+			count++;			
+			n/=10;
+		}
+		System.out.println(count);
+		sc.close();
+	}
